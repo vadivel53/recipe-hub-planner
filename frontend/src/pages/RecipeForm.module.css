@@ -1,0 +1,66 @@
+.page { padding: 40px 0 80px; }
+.header { margin-bottom: 32px; }
+.form { display: flex; flex-direction: column; gap: 32px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+
+.section {
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.rightCol { display: flex; flex-direction: column; gap: 24px; }
+.sectionTitle { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--ink); padding-bottom: 12px; border-bottom: 2px solid var(--parchment); }
+
+.row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+
+.textarea { resize: vertical; }
+
+.imgPreview {
+  width: 100%; max-height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  margin-top: 6px;
+}
+
+.publishToggle {
+  display: flex; align-items: center; gap: 10px;
+  cursor: pointer; font-size: 0.9rem; color: var(--ink-light);
+}
+.publishToggle input { width: 16px; height: 16px; accent-color: var(--saffron); }
+
+.ingredientsList, .stepsList { display: flex; flex-direction: column; gap: 10px; }
+.ingredientRow { display: flex; gap: 8px; align-items: center; }
+.stepRow { display: flex; gap: 10px; align-items: flex-start; }
+.stepNum {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--saffron); color: white;
+  font-size: 0.8rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 8px;
+}
+.stepTextarea { resize: vertical; flex: 1; }
+.removeBtn {
+  background: none; color: var(--terracotta); padding: 6px;
+  border-radius: var(--radius-sm); flex-shrink: 0;
+  transition: background 0.15s;
+}
+.removeBtn:hover { background: rgba(196,97,74,0.08); }
+.removeBtn:disabled { opacity: 0.3; pointer-events: none; }
+
+.submitRow {
+  display: flex; gap: 12px; justify-content: flex-end;
+  padding-top: 8px;
+}
+
+@media (max-width: 860px) {
+  .grid2 { grid-template-columns: 1fr; }
+  .row3 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .row3 { grid-template-columns: 1fr; }
+}

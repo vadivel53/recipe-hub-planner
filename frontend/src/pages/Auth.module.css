@@ -1,0 +1,86 @@
+.page {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--parchment) 100%);
+}
+
+.card {
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: var(--shadow-lg);
+  animation: fadeUp 0.35s ease;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.logoMark {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  display: block;
+}
+.header h1 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.header p { color: var(--bark-light); font-size: 0.9rem; }
+
+.form { display: flex; flex-direction: column; gap: 18px; }
+
+.inputWrap { position: relative; }
+.inputIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bark-light);
+  pointer-events: none;
+}
+.hasIcon { padding-left: 38px !important; }
+
+.submitBtn {
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+.demoBox {
+  margin-top: 20px;
+  padding: 14px;
+  background: var(--parchment);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  color: var(--bark);
+}
+.demoBox p { font-weight: 600; margin-bottom: 6px; }
+.demoBox code {
+  display: block;
+  background: rgba(255,255,255,0.7);
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--terracotta);
+}
+
+.switchAuth {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.88rem;
+  color: var(--bark-light);
+}
+.switchAuth a { color: var(--saffron); font-weight: 600; }
+.switchAuth a:hover { text-decoration: underline; }
